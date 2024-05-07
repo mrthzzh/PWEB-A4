@@ -1,7 +1,10 @@
 <?php
 
-class Home {
+class Home extends Controller{
     public function index() {
-        echo 'Home/index'; // Memanggil function index pada kelas home
+        $data['judul'] = 'Home';
+        $this->view('templates/header', $data);
+        $this->view('home/index'); // Memanggil function index pada kelas home
+        $this->view('templates/footer');
     }
 }
