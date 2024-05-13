@@ -25,6 +25,8 @@ isset digunakan untuk cek apakah suatu variabel telah diberi value atau belum.
         $address; // Variabel belum diinisialisasi
         var_dump(isset($address)); // Output: bool(false)
 
+alt+panah atas = pindah ke atas
+shift+alt+panah bawah = copy ke bawah
 
 
 

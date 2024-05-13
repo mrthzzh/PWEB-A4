@@ -1,1 +1,1 @@
-<h1>Ini home</h1>
+<h1>Ini home. Halo <?= $data['nama']; ?> </h1>
