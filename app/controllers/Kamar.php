@@ -17,4 +17,18 @@ class Kamar extends Controller{
         $this->view('kamar/detail', $data);
         $this->view('templates/footer');
     }
+
+    public function tambah() {
+        $data['judul'] = 'Form Tambah Data Kamar';
+        $this->view('templates/header', $data);
+        $this->view('kamar/tambahKamar');
+        $this->view('templates/footer');
+    }
+
+    public function tambahBaru() {
+        if ($this->model('Kamar_model')->tambahKamar($_POST) > 0) {
+            header('Location: ' . BASEURL . '/kamar');
+            exit;
+        }
+    }
 }
