@@ -1,5 +1,11 @@
-<div>
-    <form action="<?= BASEURL; ?>/login/login" method="post"> 
+<div class="container mt-3">
+    <h1>Login</h1>
+    <div class="row">
+        <div class="col-lg-6">
+            <?php Flasher::flash();?>
+        </div>
+    </div>
+    <form action="<?= BASEURL; ?>/log/login" method="POST">
         <label for="email">Email</label>
         <input type="email" name="email" id="email" required>
         <label for="password">Password</label>

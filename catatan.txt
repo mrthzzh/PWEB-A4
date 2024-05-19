@@ -40,3 +40,6 @@ public function tambahKamar($data)
     <form action="<?= BASEURL; ?>/kamar/tambahBaru" method="post"> 
     itu tambahBaru methodenya di controller
 
+$_SESSION = mekanisme penyimpanan informasi kedalam variabel 
+agar bisa digunakan di lebih dari satu halaman
+-jalankan session_start()
