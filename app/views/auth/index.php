@@ -5,7 +5,7 @@
             <?php Flasher::flash();?>
         </div>
     </div>
-    <form action="<?= BASEURL; ?>/log/login" method="POST">
+    <form action="<?= BASEURL; ?>/Log/login" method="post">
         <label for="email">Email</label>
         <input type="email" name="email" id="email" required>
         <label for="password">Password</label>

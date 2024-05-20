@@ -68,5 +68,16 @@ class Individuals_model
         return $this->db->single();
     }
 
+    public function login($data) {
+        $this->db->query('SELECT * FROM ' . $this->table . ' WHERE email=:email');
+        $this->db->bind('email', $data['email']);
+        $user = $this->db->single();
+        if(password_verify($data['password'], $user['password'])) {
+            return $user;
+        } else {
+            return false;
+        }
+    }
+
 
 }
