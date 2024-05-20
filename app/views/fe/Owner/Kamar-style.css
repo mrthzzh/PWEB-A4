@@ -1,0 +1,203 @@
+:root{
+    --primary: rgb(255, 255, 255);
+    --bg: #62005F;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: white;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.logo {
+    margin-top: 10px;
+    margin-bottom: 0%;
+    width: 50px; /* Atur ukuran logo sesuai kebutuhan */
+    height: auto; /* Biarkan tinggi mengikuti proporsi aslinya */
+    margin-right: 0px; /* Jarak antara logo dan teks */
+    margin-left: 10px;
+}
+
+
+
+.navbar {
+    width: 250px;
+    height: 100vh;
+    background-color: #62005F;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar-top {
+    margin-top: 20px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+}
+
+.brand-name {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.navbar-menu span{
+    margin-left: 10px;
+}
+.navbar-menu a{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-item {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+    border-radius: 12px;
+}
+.navbar-item-kamar {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+    border-radius: 12px;
+    background-color: #FF4167;
+}
+
+.navbar-item:hover{
+    background-color: #FF4167;
+    border-radius: 12px;
+}
+
+
+
+.navbar-bottom {
+    margin-bottom: 25px;
+    margin-left: 30px;
+}
+
+.bottom-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.logout-button {
+    background-color: #FF4167;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 150px;
+    height: 45px;
+    border-radius: 12px;
+}
+
+.logout-button:hover {
+    background-color: #621c8a;
+}
+
+
+.navbar-item i{
+    margin-right: 10px;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 1100px;
+    height: 600px;
+    background-color: #ffffff ;
+    border-radius: 32px 32px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-table{
+    margin-top: 30px;
+    width: 95%;
+    overflow: auto;
+    /* background: #fff0f0; */
+    border-radius: 8px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+thead{
+    padding: 0;
+    text-align: center;
+    background-color: #62005F; 
+    height: 60px;
+    font-weight: 200;
+}
+tbody tr td{
+    padding: 20px 20px;
+    text-align: center;
+}
+tbody{
+    background-color: #c57dc3; 
+}
+
+
+.content h2{
+    text-align: center;
+    margin-top: 50px;
+    color: #621c8a;
+}
+
+.content .garis{
+    width: auto;
+    background-color: #621c8a;
+    height: 2px;
+    text-align: center;
+}
